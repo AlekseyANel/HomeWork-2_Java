@@ -3,10 +3,9 @@ package com.alevel;
 public class Main {
 
     public static <Char> void main(String[] args) {
-        int num = 347693485;
-
 
 //        Task1
+        int num = 347693485;
         int j;
         for (int i = 1; i < num; i = i * 10) {
             j = (num / i) % 10;

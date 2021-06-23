@@ -5,10 +5,11 @@ public class Main {
     public static <Char> void main(String[] args) {
 
 //        Task1
+        System.out.println("Task1");
         int num = 347693485;
-        int j;
-        for (int i = 1; i < num; i = i * 10) {
-            j = (num / i) % 10;
+        int j; //промежуточная переменная
+        for (int i = 1; i < num; i = i * 10) //счётчик выхода из цикла
+        {   j = (num / i) % 10; // захватывает цифры числа  по очереди  справа-налево
             if ((j % 2 == 0) && (j % 3 == 0)) {
                 System.out.println(j + " fizzbuzz");
             } else {
@@ -23,16 +24,32 @@ public class Main {
                 }
             }
         }
-//        Task1.1
-//        String numS=String.valueOf(num);
-//        System.out.println(numS+" - уже строка");
-        //    for (int k=0; k<= s.length(numS); k++) {
-        //      char charNum = numS.charAt(k);
-        //    if charNum
-        //   }
+        //     Task1.1
+       System.out.println("Task1.1 со звездочкой");
+        int j1;
+        int i1=1;
+        for (int m=10; num%m!=num; m=m*10) {i1=m;}//Выяснили i1: кол-во цифр в числе num равно кол-ву десяток в переменной m
+        for (; i1 >= 1; i1 = i1 / 10) {
+            j1 = (num / i1) % 10; // захватывает по очереди цифры числа слева-направо
+            if ((j1 % 2 == 0) && (j1 % 3 == 0)) {
+                System.out.println(j1 + " fizzbuzz");
+            } else {
+                if (j1 % 2 == 0) {
+                    System.out.println(j1 + " fizz");
+                } else {
+                    if (j1 % 3 == 0) {
+                        System.out.println(j1 + " buzz");
+                    } else {
+                        System.out.println("сама цифра = " + j1);
+                    }
+                }
+            }
+        }
+
 
 
 //     Task2
+        System.out.println("Task2");
         long numN = 22122;
 //        System.out.println(Long.toBinaryString(numN)+" - это бинари представление от числа " + numN);
         String numSB = Long.toBinaryString(numN);

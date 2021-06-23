@@ -19,7 +19,7 @@ public class Main {
                     if (j % 3 == 0) {
                         System.out.println(j + " buzz");
                     } else {
-                        System.out.println("сама цифра = " + j);
+                        System.out.println(j + "=сама цифра");
                     }
                 }
             }
@@ -28,7 +28,7 @@ public class Main {
        System.out.println("Task1.1 со звездочкой");
         int j1;
         int i1=1;
-        for (int m=10; num%m!=num; m=m*10) {i1=m;}//Выяснили i1: кол-во цифр в числе num равно кол-ву десяток в переменной m
+        for (int m=10; num%m!=num; m=m*10) {i1=m;}//Выяснили i1: кол-во десяток в переменной m равно кол-ву цифр в числе num
         for (; i1 >= 1; i1 = i1 / 10) {
             j1 = (num / i1) % 10; // захватывает по очереди цифры числа слева-направо
             if ((j1 % 2 == 0) && (j1 % 3 == 0)) {
@@ -40,7 +40,7 @@ public class Main {
                     if (j1 % 3 == 0) {
                         System.out.println(j1 + " buzz");
                     } else {
-                        System.out.println("сама цифра = " + j1);
+                        System.out.println(j1 + "=сама цифра");
                     }
                 }
             }

@@ -2,7 +2,7 @@
 package com.alevel;
 public class Main {
 
-    public static <Char> void main(String[] args) {
+    public static void main(String[] args) {
 
 //        Task1
         System.out.println("Task1");

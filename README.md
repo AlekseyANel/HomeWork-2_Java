@@ -1,2 +1,2 @@
-# HomeWork-2_JAVA. Look at the next branch.
+# HomeWork-2_Java. Look at the next branch.
 
